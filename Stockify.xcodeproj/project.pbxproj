@@ -13,6 +13,8 @@
 		0C9A23EB25AE6E4200C440FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C9A23EA25AE6E4200C440FD /* Preview Assets.xcassets */; };
 		0C9A23F625AE6E4300C440FD /* StockifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A23F525AE6E4300C440FD /* StockifyTests.swift */; };
 		0C9A240125AE6E4400C440FD /* StockifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A240025AE6E4400C440FD /* StockifyUITests.swift */; };
+		0C9A241C25AE71B100C440FD /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A241B25AE71B100C440FD /* Webservice.swift */; };
+		0C9A242525AE74CC00C440FD /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A242425AE74CC00C440FD /* Stock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		0C9A23FC25AE6E4400C440FD /* StockifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StockifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C9A240025AE6E4400C440FD /* StockifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockifyUITests.swift; sourceTree = "<group>"; };
 		0C9A240225AE6E4400C440FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C9A241B25AE71B100C440FD /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		0C9A242425AE74CC00C440FD /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,8 @@
 		0C9A23E225AE6E3700C440FD /* Stockify */ = {
 			isa = PBXGroup;
 			children = (
+				0C9A242325AE74BF00C440FD /* Models */,
+				0C9A241A25AE71A000C440FD /* Services */,
 				0C9A23E325AE6E3700C440FD /* StockifyApp.swift */,
 				0C9A23E525AE6E3700C440FD /* ContentView.swift */,
 				0C9A23E725AE6E4200C440FD /* Assets.xcassets */,
@@ -128,6 +134,22 @@
 				0C9A240225AE6E4400C440FD /* Info.plist */,
 			);
 			path = StockifyUITests;
+			sourceTree = "<group>";
+		};
+		0C9A241A25AE71A000C440FD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0C9A241B25AE71B100C440FD /* Webservice.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0C9A242325AE74BF00C440FD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0C9A242425AE74CC00C440FD /* Stock.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +283,8 @@
 			files = (
 				0C9A23E625AE6E3700C440FD /* ContentView.swift in Sources */,
 				0C9A23E425AE6E3700C440FD /* StockifyApp.swift in Sources */,
+				0C9A242525AE74CC00C440FD /* Stock.swift in Sources */,
+				0C9A241C25AE71B100C440FD /* Webservice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
