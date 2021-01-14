@@ -15,7 +15,7 @@ struct StockViewModel {
     }
     
     var description: String {
-        return self.stock.desc
+        return self.stock.description
     }
     
     var price: String {

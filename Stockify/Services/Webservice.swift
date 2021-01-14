@@ -15,11 +15,21 @@ class Webservice {
         
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             guard let safeData = data, error == nil else {
-                fatalError("Networking failed.")
+                print("Networking Failed")
+                completion(nil)
+                return
             }
             
-            let stocks = try? JSONDecoder().decode([Stock].self, from: safeData)
-            stocks == nil ? completion(nil) : completion(stocks)
+            do {
+                let stocks = try JSONDecoder().decode([Stock].self, from: safeData)
+                print(stocks)
+                stocks == nil ? completion(nil) : completion(stocks)
+            } catch {
+                print(error)
+            }
+            
+            
+            
         }.resume()
     }
 }
